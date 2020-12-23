@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="30dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            >-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/relative_one">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linear_one"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        >
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#29ABE2"
+                            app:cardCornerRadius="55dp"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/news"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="146dp"
+                            android:id="@+id/cardview_news"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardElevation="15dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#5E5D5D"
+                            android:outlineSpotShadowColor="#5E5D5D">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="NEWS"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Top News State News"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Breaking News"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_gravity="center">
+
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#FBB03B"
+                            app:cardCornerRadius="55dp"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/statistics"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="146dp"
+                            android:id="@+id/cardview_price"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:cardElevation="14dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#706D6D"
+                            android:outlineSpotShadowColor="#7A777C">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="Price Compare"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Compare Products"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prices For good deal"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/relative_two"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/relative_one">
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_margin="12dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                >-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linear_three"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        >
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#44C4A1"
+                            app:cardCornerRadius="55dp"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/cash"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="146dp"
+                            android:id="@+id/cardview_loan"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:cardElevation="14dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#706D6D"
+                            android:outlineSpotShadowColor="#7A777C">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="Loan Services"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Personal Loan ,Business"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loan and Credit Card"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_gravity="center">
+
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#563531"
+                            app:cardCornerRadius="55dp"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/family"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="146dp"
+                            android:id="@+id/cardview_insurance"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:cardElevation="14dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#706D6D"
+                            android:outlineSpotShadowColor="#7A777C">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="Insurance Services"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Health Insurance Team"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Insurance etc"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <!--            </RelativeLayout>-->
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/relative_three"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/relative_two">
+
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_margin="12dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                >-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linear_two"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        >
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#EC455A"
+                            app:cardCornerRadius="55dp"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/accounting"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="146dp"
+                            android:id="@+id/cardview_business"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:cardElevation="14dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#706D6D"
+                            android:outlineSpotShadowColor="#7A777C">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="Business Services"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Comapny Registration"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="trade mark all services"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_gravity="center">
+
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#1390BC"
+                            app:cardCornerRadius="55dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="37dp"
+                                android:layout_height="38dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/job" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="146dp"
+                            android:id="@+id/cardview_job"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:cardElevation="14dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#706D6D"
+                            android:outlineSpotShadowColor="#7A777C">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="Job Services"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Create Resume and"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="get"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+                <!--            </RelativeLayout>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/relative_three">
+
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_margin="12dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                >-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/linear_four"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        >
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#FDC115"
+                            app:cardCornerRadius="55dp"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/cource"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/cardview_indibull"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:cardElevation="14dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#706D6D"
+                            android:outlineSpotShadowColor="#7A777C">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="IndiBull Courses"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Increase skill and"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Knowledge Online"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Coming soon"
+                                    android:layout_gravity="right"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_gravity="center">
+
+                        <com.google.android.material.card.MaterialCardView
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            app:cardElevation="20dp"
+                            app:strokeWidth="1dp"
+                            app:strokeColor="#7CBC42"
+                            app:cardCornerRadius="55dp"
+                            >
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/discount"
+                                />
+                        </com.google.android.material.card.MaterialCardView>
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="160dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/cardview_indibullstore"
+                            app:cardCornerRadius="15dp"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="4dp"
+                            app:cardElevation="14dp"
+                            android:layout_gravity="start"
+                            android:stateListAnimator="@animator/button_pressed_animator"
+                            android:outlineAmbientShadowColor="#706D6D"
+                            android:outlineSpotShadowColor="#7A777C">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="16dp"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:text="Company Registration"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Company Registration"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="8dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Trade mark All services"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Coming soon"
+                                    android:layout_gravity="right"
+                                    android:textSize="12sp"
+                                    android:layout_marginRight="4dp"
+                                    android:layout_marginTop="4dp"
+                                    >
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--            </RelativeLayout>-->
+            </RelativeLayout>
+
+<!--        </RelativeLayout>-->
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
