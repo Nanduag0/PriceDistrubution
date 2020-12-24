@@ -12,50 +12,39 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
+        android:scrollbars="none"
         android:orientation="vertical">
 
-<!--        <RelativeLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-
-<!--            >-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:id="@+id/relative_one">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:id="@+id/linear_one"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_alignParentLeft="true"
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         >
                         <com.google.android.material.card.MaterialCardView
 
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#29ABE2"
                             app:cardCornerRadius="55dp"
@@ -68,18 +57,17 @@
                                 />
                         </com.google.android.material.card.MaterialCardView>
 
-
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
-                            android:layout_height="146dp"
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
                             android:id="@+id/cardview_news"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginRight="8dp"
-                            android:layout_marginBottom="8dp"
-                            app:cardElevation="15dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#5E5D5D"
@@ -89,6 +77,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_gravity="bottom"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="16dp"
@@ -98,7 +88,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
+                                    android:textSize="14dp"
                                     android:text="NEWS"
                                     >
                                 </TextView>
@@ -107,7 +97,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Top News State News"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -116,7 +106,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Breaking News"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -133,18 +123,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     >
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         android:layout_gravity="center">
 
                         <com.google.android.material.card.MaterialCardView
@@ -152,7 +134,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#FBB03B"
                             app:cardCornerRadius="55dp"
@@ -166,15 +148,15 @@
                         </com.google.android.material.card.MaterialCardView>
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
-                            android:layout_height="146dp"
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
                             android:id="@+id/cardview_price"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_marginBottom="4dp"
-                            app:cardElevation="14dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#706D6D"
@@ -186,6 +168,8 @@
                                 android:orientation="vertical"
                                 android:layout_gravity="bottom"
                                 android:layout_marginTop="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_marginBottom="16dp"
                                 >
                                 <TextView
@@ -193,7 +177,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
+                                    android:textSize="14sp"
                                     android:text="Price Compare"
                                     >
                                 </TextView>
@@ -202,7 +186,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Compare Products"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -211,7 +195,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Prices For good deal"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -228,6 +212,9 @@
                 </LinearLayout>
 
 
+
+                <!--        </RelativeLayout>-->
+
             </RelativeLayout>
 
             <RelativeLayout
@@ -236,11 +223,9 @@
                 android:orientation="horizontal"
                 android:id="@+id/relative_two"
                 android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/relative_one">
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/relative_one">
                 <!--            <RelativeLayout-->
                 <!--                android:layout_width="match_parent"-->
                 <!--                android:layout_margin="12dp"-->
@@ -249,26 +234,19 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:id="@+id/linear_three"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_alignParentLeft="true"
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         >
                         <com.google.android.material.card.MaterialCardView
 
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#44C4A1"
                             app:cardCornerRadius="55dp"
@@ -284,15 +262,15 @@
 
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
-                            android:layout_height="146dp"
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
                             android:id="@+id/cardview_loan"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_marginBottom="4dp"
-                            app:cardElevation="14dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#706D6D"
@@ -304,6 +282,8 @@
                                 android:orientation="vertical"
                                 android:layout_gravity="bottom"
                                 android:layout_marginTop="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_marginBottom="16dp"
                                 >
                                 <TextView
@@ -311,7 +291,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
+                                    android:textSize="14sp"
                                     android:text="Loan Services"
                                     >
                                 </TextView>
@@ -320,7 +300,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Personal Loan ,Business"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -329,7 +309,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Loan and Credit Card"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -346,18 +326,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     >
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         android:layout_gravity="center">
 
                         <com.google.android.material.card.MaterialCardView
@@ -365,7 +337,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#563531"
                             app:cardCornerRadius="55dp"
@@ -379,15 +351,15 @@
                         </com.google.android.material.card.MaterialCardView>
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
-                            android:layout_height="146dp"
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
                             android:id="@+id/cardview_insurance"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_marginBottom="4dp"
-                            app:cardElevation="14dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#706D6D"
@@ -398,6 +370,8 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 android:layout_gravity="bottom"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="16dp"
                                 >
@@ -406,7 +380,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
+                                    android:textSize="14sp"
                                     android:text="Insurance Services"
                                     >
                                 </TextView>
@@ -415,7 +389,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Health Insurance Team"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -424,7 +398,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Insurance etc"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -451,11 +425,9 @@
                 android:orientation="horizontal"
                 android:id="@+id/relative_three"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/relative_two">
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/relative_two">
 
                 <!--            <RelativeLayout-->
                 <!--                android:layout_width="match_parent"-->
@@ -464,27 +436,20 @@
                 <!--                >-->
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:id="@+id/linear_two"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/linear_four"
+                    android:layout_alignParentLeft="true"
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         >
                         <com.google.android.material.card.MaterialCardView
 
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#EC455A"
                             app:cardCornerRadius="55dp"
@@ -500,15 +465,15 @@
 
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
-                            android:layout_height="146dp"
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
                             android:id="@+id/cardview_business"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_marginBottom="4dp"
-                            app:cardElevation="14dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#706D6D"
@@ -519,6 +484,8 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 android:layout_gravity="bottom"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="16dp"
                                 >
@@ -527,7 +494,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
+                                    android:textSize="14sp"
                                     android:text="Business Services"
                                     >
                                 </TextView>
@@ -536,7 +503,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Comapny Registration"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -545,7 +512,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="trade mark all services"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -562,18 +529,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     >
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         android:layout_gravity="center">
 
                         <com.google.android.material.card.MaterialCardView
@@ -581,7 +540,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#1390BC"
                             app:cardCornerRadius="55dp"
@@ -595,15 +554,15 @@
                         </com.google.android.material.card.MaterialCardView>
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
-                            android:layout_height="146dp"
+                            android:layout_width="148dp"
+                            android:layout_height="148dp"
                             android:id="@+id/cardview_job"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_marginBottom="4dp"
-                            app:cardElevation="14dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#706D6D"
@@ -614,6 +573,8 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 android:layout_gravity="bottom"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="16dp"
                                 >
@@ -622,7 +583,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
+                                    android:textSize="14sp"
                                     android:text="Job Services"
                                     >
                                 </TextView>
@@ -631,7 +592,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Create Resume and"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -640,7 +601,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="get"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -666,12 +627,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginTop="30dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/relative_three">
+                android:layout_below="@+id/relative_three">
 
                 <!--            <RelativeLayout-->
                 <!--                android:layout_width="match_parent"-->
@@ -680,27 +639,20 @@
                 <!--                >-->
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:id="@+id/linear_four"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/linear_five"
+                    android:layout_alignParentLeft="true"
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         >
                         <com.google.android.material.card.MaterialCardView
 
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#FDC115"
                             app:cardCornerRadius="55dp"
@@ -716,15 +668,15 @@
 
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
+                            android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:id="@+id/cardview_indibull"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_marginBottom="4dp"
-                            app:cardElevation="14dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#706D6D"
@@ -736,6 +688,8 @@
                                 android:orientation="vertical"
                                 android:layout_gravity="bottom"
                                 android:layout_marginTop="12dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
                                 android:layout_marginBottom="16dp"
                                 >
                                 <TextView
@@ -743,7 +697,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
+                                    android:textSize="14sp"
                                     android:text="IndiBull Courses"
                                     >
                                 </TextView>
@@ -752,7 +706,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Increase skill and"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -761,7 +715,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Knowledge Online"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -770,7 +724,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Coming soon"
                                     android:layout_gravity="right"
-                                    android:textSize="12sp"
+                                    android:textSize="8sp"
                                     android:layout_marginTop="4dp"
                                     android:layout_marginRight="4dp"
                                     >
@@ -784,22 +738,15 @@
                     </RelativeLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     >
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
                         android:layout_gravity="center">
 
                         <com.google.android.material.card.MaterialCardView
@@ -807,7 +754,7 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
-                            app:cardElevation="20dp"
+                            app:cardElevation="6dp"
                             app:strokeWidth="1dp"
                             app:strokeColor="#7CBC42"
                             app:cardCornerRadius="55dp"
@@ -821,15 +768,15 @@
                         </com.google.android.material.card.MaterialCardView>
                         <androidx.cardview.widget.CardView
 
-                            android:layout_width="160dp"
+                            android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:id="@+id/cardview_indibullstore"
                             app:cardCornerRadius="15dp"
                             android:layout_marginTop="40dp"
-                            android:layout_marginLeft="4dp"
-                            android:layout_marginRight="4dp"
-                            android:layout_marginBottom="4dp"
-                            app:cardElevation="14dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="18dp"
+                            app:cardElevation="5dp"
                             android:layout_gravity="start"
                             android:stateListAnimator="@animator/button_pressed_animator"
                             android:outlineAmbientShadowColor="#706D6D"
@@ -840,7 +787,9 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical"
                                 android:layout_gravity="bottom"
-                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="16dp"
                                 >
                                 <TextView
@@ -848,8 +797,8 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:textStyle="bold"
-                                    android:textSize="16sp"
-                                    android:text="Company Registration"
+                                    android:textSize="14sp"
+                                    android:text="IndiBull Stores"
                                     >
                                 </TextView>
                                 <TextView
@@ -857,7 +806,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Company Registration"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="8dp"
                                     >
                                 </TextView>
@@ -866,7 +815,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Trade mark All services"
                                     android:layout_gravity="center"
-                                    android:textSize="14sp"
+                                    android:textSize="12sp"
                                     android:layout_marginTop="4dp"
                                     >
                                 </TextView>
@@ -875,7 +824,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Coming soon"
                                     android:layout_gravity="right"
-                                    android:textSize="12sp"
+                                    android:textSize="8sp"
                                     android:layout_marginRight="4dp"
                                     android:layout_marginTop="4dp"
                                     >
@@ -891,9 +840,11 @@
                 </LinearLayout>
 
                 <!--            </RelativeLayout>-->
+
             </RelativeLayout>
 
-<!--        </RelativeLayout>-->
+
+        </RelativeLayout>
 
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
